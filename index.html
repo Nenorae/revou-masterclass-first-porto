@@ -1,128 +1,135 @@
-  <!doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Ganendra Wishnu Wardhana | Portfolio</title>
-      <link rel="stylesheet" href="style.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
-        rel="stylesheet"
-      />
-    </head>
-    <body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganendra Wishnu Wardhana | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Menambahkan style khusus untuk rata kanan-kiri -->
+    <style>
+      .text-justify {
+        text-align: justify;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        STEP 1: THE CONTAINER
+    -->
+    <div class="cv-container">
       <!-- 
-          STEP 1: THE CONTAINER
-      -->
-      <div class="cv-container">
-        <!-- 
-              STEP 2: THE HEADER (Identity & Contact)
-          -->
-        <header class="cv-header">
-          <div class="header-content">
-            <h1 class="name">Ganendra Wishnu Wardhana</h1>
-            <div class="header-top">
-              <p class="role">Backend Developer & Network Engineer</p>
-            </div>
-            <div class="social-links">
-              <a href="https://github.com/Nenorae" target="_blank">GitHub</a> /
-              <a href="mailto:ganendra.wishnu@gmail.com">Email</a>
-            </div>
+            STEP 2: THE HEADER (Identity & Contact)
+        -->
+      <header class="cv-header">
+        <div class="header-content">
+          <h1 class="name">Ganendra Wishnu Wardhana</h1>
+          <div class="header-top">
+            <p class="role">Backend Developer & Network Engineer</p>
           </div>
-          <div class="contact-info">
-            <p>087774132234</p>
-            <p>Sidoarjo, Indonesia</p>
+          <div class="social-links">
+            <a href="https://github.com/Nenorae" target="_blank">GitHub</a> /
+            <a href="mailto:ganendra.wishnu@gmail.com">Email</a>
           </div>
-        </header>
+        </div>
+        <div class="contact-info">
+          <p>087774132234</p>
+          <p>Sidoarjo, Indonesia</p>
+        </div>
+      </header>
 
-        <!-- 
-              STEP 3: THE MAIN CONTENT
-          -->
-        <main class="cv-main">
-          <!-- ABOUT ME SECTION -->
-          <section class="cv-section">
-            <h2 class="section-title">About Me</h2>
-            <div class="experience-item">
-              <p class="item-desc">
-                6th-semester Internet Engineering Technology student specializing in backend system development with a deep interest in blockchain technology. Experienced in designing and building APIs (REST & GraphQL), managing databases, and debugging systems. Possesses a strong technical understanding of distributed systems architecture and network fundamentals (TCP/IP, Server Configuration). Currently developing a private blockchain ecosystem from scratch using Hyperledger Besu for a digital rupiah project.
+      <!-- 
+            STEP 3: THE MAIN CONTENT
+        -->
+      <main class="cv-main">
+        <!-- ABOUT ME SECTION -->
+        <section class="cv-section">
+          <h2 class="section-title">About Me</h2>
+          <div class="experience-item">
+            <p class="item-desc text-justify">
+              6th-semester Internet Engineering Technology student specializing in backend system development with a deep interest in blockchain technology. Experienced in designing and building APIs (REST & GraphQL), managing databases, and debugging systems. Possesses a strong technical understanding of distributed systems architecture and network fundamentals (TCP/IP, Server Configuration). Currently developing a private blockchain ecosystem from scratch using Hyperledger Besu for a digital rupiah project.
+            </p>
+          </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="cv-section">
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="project-list">
+            <div class="project-item" style="margin-bottom: 1.5rem;">
+              <h3 class="item-title">
+                <a href="https://github.com/Nenorae/qrypscan" target="_blank">Private Blockchain Ecosystem for Digital Rupiah</a>
+              </h3>
+              <p class="item-desc text-justify">
+                Built a private blockchain ecosystem from scratch. Implemented a <strong>Hyperledger Besu</strong> node with QBFT consensus. Developed a Block Explorer (Qrypscan) using <strong>Next.js, GraphQL, and REST API</strong> for real-time node data parsing via WebSocket, and a Web3 Wallet (Qrypta) using Flutter. Implemented smart contract verification logic and on-chain data optimization using <strong>PostgreSQL & TimescaleDB</strong>.
               </p>
             </div>
-          </section>
-
-          <!-- PROJECTS SECTION -->
-          <section class="cv-section">
-            <h2 class="section-title">Selected Projects</h2>
-            <div class="project-list">
-              <div class="project-item" style="margin-bottom: 1.5rem;">
-                <h3 class="item-title">
-                  <a href="https://github.com/Nenorae/qrypscan" target="_blank">Private Blockchain Ecosystem for Digital Rupiah</a>
-                </h3>
-                <p class="item-desc">
-                  Built a private blockchain ecosystem from scratch. Implemented a <strong>Hyperledger Besu</strong> node with QBFT consensus. Developed a Block Explorer (Qrypscan) using <strong>Next.js, GraphQL, and REST API</strong> for real-time node data parsing via WebSocket, and a Web3 Wallet (Qrypta) using Flutter. Implemented smart contract verification logic and on-chain data optimization using <strong>PostgreSQL & TimescaleDB</strong>.
-                </p>
-              </div>
-              
-              <div class="project-item" style="margin-bottom: 1.5rem;">
-                <h3 class="item-title">
-                  <a href="https://github.com/Nenorae/PIFACE" target="_blank">PiFace: Distributed Face Detection System</a>
-                </h3>
-                <p class="item-desc">
-                  Designed a distributed face detection system to overcome computational limitations on Raspberry Pi. Separated I/O tasks (on edge devices) from heavy computation (on a central server) using <strong>Python and Deepface</strong>. Created an efficient workflow by offloading machine learning processes to the server, significantly optimizing performance.
-                </p>
-              </div>
-
-              <div class="project-item">
-                <h3 class="item-title">
-                  <a href="https://github.com/Nenorae/RMI-cinema" target="_blank">RMI Cinema: Distributed Booking System</a>
-                </h3>
-                <p class="item-desc">
-                  Developed a distributed cinema ticket booking system using <strong>Java RMI</strong>. Managed movie, seat, and booking data with an SQL database. Applied application-level locking mechanisms to ensure data integrity and prevent double-booking in a multi-JVM system.
-                </p>
-              </div>
+            
+            <div class="project-item" style="margin-bottom: 1.5rem;">
+              <h3 class="item-title">
+                <a href="https://github.com/Nenorae/PIFACE" target="_blank">PiFace: Distributed Face Detection System</a>
+              </h3>
+              <p class="item-desc text-justify">
+                Designed a distributed face detection system to overcome computational limitations on Raspberry Pi. Separated I/O tasks (on edge devices) from heavy computation (on a central server) using <strong>Python and Deepface</strong>. Created an efficient workflow by offloading machine learning processes to the server, significantly optimizing performance.
+              </p>
             </div>
-          </section>
 
-          <!-- COLUMN LAYOUT (Expertise & Education) -->
-          <section class="cv-section inline-sections">
-            <div class="sub-section">
-              <h2 class="section-title">Skills</h2>
-              <ul class="skills-list" style="line-height: 1.6;">
-                <li><strong>Languages:</strong> Java, Python, JavaScript, PHP</li>
-                <li><strong>Backend:</strong> Node.js (Express), Spring Boot, Laravel</li>
-                <li><strong>Databases:</strong> PostgreSQL, SQL</li>
-                <li><strong>Blockchain:</strong> Hyperledger Besu, Solidity, Web3.js, QBFT</li>
-                <li><strong>Networking:</strong> TCP/IP & UDP, Cisco Config, DNS, Linux Admin</li>
-                <li><strong>Tools:</strong> Git, Docker, Nginx, GraphQL, REST API</li>
-              </ul>
+            <div class="project-item">
+              <h3 class="item-title">
+                <a href="https://github.com/Nenorae/RMI-cinema" target="_blank">RMI Cinema: Distributed Booking System</a>
+              </h3>
+              <p class="item-desc text-justify">
+                Developed a distributed cinema ticket booking system using <strong>Java RMI</strong>. Managed movie, seat, and booking data with an SQL database. Applied application-level locking mechanisms to ensure data integrity and prevent double-booking in a multi-JVM system.
+              </p>
             </div>
-            <div class="sub-section">
-              <h2 class="section-title">Education</h2>
-              <div class="education-item">
-                <h3 class="item-title" style="margin-bottom: 0.2rem;">B.App.Sc in Internet Engineering Technology</h3>
-                <p class="item-org" style="font-weight: 500;">Electronic Engineering Polytechnic Institute of Surabaya (PENS)</p>
-                <p class="item-desc" style="margin-top: 0.5rem; color: #555;">Aug 2023 — Present | <strong>GPA: 3.71</strong></p>
-                <p class="item-desc" style="margin-top: 0.3rem; font-size: 0.9em;">
-                  Focus on Web Development, Computer Networks, Database Systems, and IoT.
-                </p>
-              </div>
+          </div>
+        </section>
+
+        <!-- COLUMN LAYOUT (Expertise & Education) -->
+        <section class="cv-section inline-sections">
+          <div class="sub-section">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list" style="line-height: 1.6;">
+              <li><strong>Languages:</strong> Java, Python, JavaScript, PHP</li>
+              <li><strong>Backend:</strong> Node.js (Express), Spring Boot, Laravel</li>
+              <li><strong>Databases:</strong> PostgreSQL, SQL</li>
+              <li><strong>Blockchain:</strong> Hyperledger Besu, Solidity, Web3.js, QBFT</li>
+              <li><strong>Networking:</strong> TCP/IP & UDP, Cisco Config, DNS, Linux Admin</li>
+              <li><strong>Tools:</strong> Git, Docker, Nginx, GraphQL, REST API</li>
+            </ul>
+          </div>
+          <div class="sub-section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+              <h3 class="item-title" style="margin-bottom: 0.2rem;">B.App.Sc in Internet Engineering Technology</h3>
+              <p class="item-org" style="font-weight: 500;">Electronic Engineering Polytechnic Institute of Surabaya (PENS)</p>
+              <p class="item-desc" style="margin-top: 0.5rem; color: #555;">Aug 2023 — Present | <strong>GPA: 3.71</strong></p>
+              <p class="item-desc text-justify" style="margin-top: 0.3rem; font-size: 0.9em;">
+                Focus on Web Development, Computer Networks, Database Systems, and IoT.
+              </p>
             </div>
-          </section>
-        </main>
+          </div>
+        </section>
+      </main>
 
-        <!-- STEP 7: THE FOOTER -->
-        <footer class="cv-footer">
-          <p>&copy; 2026 Ganendra Wishnu Wardhana. Personal Portfolio.</p>
-        </footer>
-      </div>
+      <!-- STEP 7: THE FOOTER -->
+      <footer class="cv-footer">
+        <p>&copy; 2026 Ganendra Wishnu Wardhana. Personal Portfolio.</p>
+      </footer>
+    </div>
 
-      <!-- STEP 15: THE TOGGLE BUTTON (Floating) -->
-      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
-        Theme
-      </button>
+    <!-- STEP 15: THE TOGGLE BUTTON (Floating) -->
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+      Theme
+    </button>
 
-      <!-- STEP 17: ADDING THE SCRIPT -->
-      <script src="script.js"></script>
-    </body>
-  </html>
+    <!-- STEP 17: ADDING THE SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
